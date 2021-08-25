@@ -22,62 +22,62 @@ launch_bar() {
 	echo $1
 	# Launch the bar
 	if [[ "$style" == "hack" || "$style" == "cuts" ]]; then
-		MONITOR=$1 polybar -q top -c "$dir/$style/config.ini" &
-		MONITOR=$1 polybar -q bottom -c "$dir/$style/config.ini" &
+		polybar -q top -c "$dir/$style/config.ini" &
+		polybar -q bottom -c "$dir/$style/config.ini" &
 	elif [[ "$style" == "pwidgets" ]]; then
 		bash "$dir"/pwidgets/launch.sh --main
 	else
-		MONITOR=$1 polybar -q main -c "$dir/$style/config.ini" &	
+		polybar -q main -c "$dir/$style/config.ini" &	
 	fi
 }
 
 if [[ "$1" == "--material" ]]; then
 	style="material"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--shades" ]]; then
 	style="shades"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--hack" ]]; then
 	style="hack"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--docky" ]]; then
 	style="docky"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--cuts" ]]; then
 	style="cuts"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--shapes" ]]; then
 	style="shapes"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--grayblocks" ]]; then
 	style="grayblocks"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--blocks" ]]; then
 	style="blocks"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--colorblocks" ]]; then
 	style="colorblocks"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--forest" ]]; then
 	style="forest"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--pwidgets" ]]; then
 	style="pwidgets"
-	launch_bar_for_each_monitor
+	launch_bar
 
 elif [[ "$1" == "--panels" ]]; then
 	style="panels"
-	launch_bar_for_each_monitor
+	launch_bar
 
 else
 	cat <<- EOF

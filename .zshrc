@@ -48,7 +48,7 @@ my_monitor(){
 	xrandr --output eDP1 --auto --right-of HDMI1
 	xrandr --output HDMI1 --mode 1920x1080
 	xrandr --output eDP1 --off
-	feh --bg-fill -s /home/vtrgzll/Pictures/octopus.jpg
+	feh --bg-fill -s ~/.background/octopus.jpg
 }
 
 tmp(){

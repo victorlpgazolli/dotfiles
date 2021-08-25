@@ -1,1 +1,8 @@
-/home/vtrgzll/.gitconfig
+[commit]
+	gpgsign = true
+[user]
+	signingkey = 5E06D907134FB91FC96DBAE189824E657746B0AC
+	email = victorlpgazolli@gmail.com
+	name = victor gazolli
+[gpg]
+	program = gpg

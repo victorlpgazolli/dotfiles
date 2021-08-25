@@ -1,0 +1,2 @@
+killall -q mpd;
+mpd;

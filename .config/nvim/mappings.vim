@@ -35,6 +35,11 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> <F12> <Plug>(coc-definition)
 nmap <silent> <F8> <Plug>(coc-references)<CR>
+nmap <silent>gd <Plug>(coc-definition)
+nmap <silent>gy <Plug>(coc-type-definition)
+nmap <silent>gi <Plug>(coc-implementation)
+nmap <silent>gr <Plug>(coc-references)
+nmap <silent>rr <Plug>(coc-rename)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -82,7 +87,15 @@ vnoremap <silent> <A-Down> :m '>+1<CR>gv=gv
 nnoremap <silent> <c-A-S-Down> yyp<Up><CR>
 nnoremap <silent> <c-A-S-Up> yyp<CR>
 " ----------------- END ----------------------------
+nmap ]c <Plug>(GitGutterNextHunk)
+nmap [c <Plug>(GitGutterPrevHunk)
+nmap <silent>hs <Plug>(GitGutterStageHunk)
+nmap <silent>hu <Plug>(GitGutterUndoHunk)
 
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :tabm -1<CR>
+nnoremap <silent> <A-Right> :tabm +1<CR>
 " ----------------- UTILS --------------------------
 noremap <C-_> :Commentary<CR>                          " comment
 vnoremap <C-C> :w !xclip -i -sel c<CR><CR>             " copy selection

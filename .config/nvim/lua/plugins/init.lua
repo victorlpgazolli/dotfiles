@@ -226,7 +226,7 @@ return packer.startup(function()
 
    use {
       "glepnir/dashboard-nvim",
-      disable = not plugin_status.dashboard,
+      -- disable = not plugin_status.dashboard,
       config = function()
          require "plugins.configs.dashboard"
       end,
@@ -324,7 +324,7 @@ return packer.startup(function()
 
    use {
       "tpope/vim-fugitive",
-      disable = not plugin_status.vim_fugitive,
+      -- disable = not plugin_status.vim_fugitive,
       cmd = {
          "Git",
          "Gdiff",

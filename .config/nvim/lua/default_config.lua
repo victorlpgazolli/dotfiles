@@ -199,11 +199,13 @@ M.mappings.plugin = {
       git = "<leader>gs",
       git_blame = "<leader>gb",
    },
+coc = {
+  jumpReferences = "<leader>gr",
+  jumpImplementation = "<leader>gi",
+  jumpTypeDefinition = "<leader>gt",-- user custom mappings
+  jumpDefinition = "<leader>gd",    -- e.g: name = { "mode" , "keys" , "cmd" , "options"}
+}                                 -- name: can be empty or something unique with repect to other custom mappings
 }
-
--- user custom mappings
--- e.g: name = { "mode" , "keys" , "cmd" , "options"}
--- name: can be empty or something unique with repect to other custom mappings
 --    { mode, key, cmd } or name = { mode, key, cmd }
 -- mode: usage: mode or { mode1, mode2 }, multiple modes allowed, available modes => :h map-modes,
 -- keys: multiple keys allowed, same synxtax as modes

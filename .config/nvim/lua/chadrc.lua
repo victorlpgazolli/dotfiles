@@ -8,7 +8,7 @@ M.ui = {
    italic_comments = false,
 
    -- theme to be used, to see all available themes, open the theme switcher by <leader> + th
-   theme = "onedark",
+   theme = "chadracula",
 
    -- theme toggler, toggle between two themes, see theme_toggleer mappings
    theme_toggler = {
@@ -91,6 +91,7 @@ M.plugin_status = {
    truezen = false, -- no distraction mode for nvim
    vim_fugitive = true, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
+   coc = true, -- % magic, match it but improved
 }
 
 -- mappings -- don't use a single keymap twice --
@@ -196,6 +197,13 @@ M.mappings.plugin = {
       git = "<leader>gs",
       git_blame = "<leader>gb",
    },
+   coc = {
+     jumpReferences = "<leader>gr",
+     jumpImplementation = "<leader>gi",
+     jumpTypeDefinition = "<leader>gt",
+     jumpDefinition = "<leader>gd",
+     jumpDeclaration = "<leader>gD",
+   }
 }
 
 -- user custom mappings

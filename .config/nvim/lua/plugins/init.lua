@@ -15,7 +15,12 @@ return packer.startup(function()
    use {
       "Nvchad/extensions",
    }
-
+   use {
+     'neoclide/coc.nvim', branch = 'release',
+      setup = function()
+         require("core.mappings").coc()
+      end
+  }
    use {
       "nvim-lua/plenary.nvim",
    }

@@ -142,6 +142,15 @@ M.chadsheet = function()
    )
 end
 
+
+M.coc = function()
+  local m = plugin_maps.coc
+  map("n", m.jumpDefinition, ":call CocAction('jumpDefinition') <CR>")
+  map("n", m.jumpDeclaration, ":call CocAction('jumpDeclaration') <CR>")
+  map("n", m.jumpImplementation, ":call CocAction('jumpImplementation') <CR>")
+  map("n", m.jumpTypeDefinition, ":call CocAction('jumpTypeDefinition') <CR>")
+  map("n", m.jumpReferences, ":call CocAction('jumpReferences') <CR>")
+end
 M.comment = function()
    local m = plugin_maps.comment.toggle
    map("n", m, ":CommentToggle <CR>")

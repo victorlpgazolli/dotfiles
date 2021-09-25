@@ -177,57 +177,57 @@ return packer.startup(function()
    }
 
    -- load luasnips + cmp related in insert mode only
-
-   use {
-      "rafamadriz/friendly-snippets",
-      event = "InsertEnter",
-   }
-
-   use {
-      "hrsh7th/nvim-cmp",
-      after = "friendly-snippets",
-      config = function()
-         require "plugins.configs.cmp"
-      end,
-   }
-
-   use {
-      "L3MON4D3/LuaSnip",
-      wants = "friendly-snippets",
-      after = "nvim-cmp",
-      config = function()
-         require("plugins.configs.others").luasnip()
-      end,
-   }
-
-   use {
-      "saadparwaiz1/cmp_luasnip",
-      after = "LuaSnip",
-   }
-
-   use {
-      "hrsh7th/cmp-nvim-lua",
-      after = "cmp_luasnip",
-   }
-
-   use {
-      "hrsh7th/cmp-nvim-lsp",
-      after = "cmp-nvim-lua",
-   }
-
-   use {
-      "hrsh7th/cmp-buffer",
-      after = "cmp-nvim-lsp",
-   }
-
-   -- misc plugins
-   use {
-      "windwp/nvim-autopairs",
-      after = "nvim-cmp",
-      config = function()
-         require("plugins.configs.others").autopairs()
-      end,
-   }
+-- 
+--    use {
+--       "rafamadriz/friendly-snippets",
+--       event = "InsertEnter",
+--    }
+-- 
+--    use {
+--       "hrsh7th/nvim-cmp",
+--       after = "friendly-snippets",
+--       config = function()
+--          require "plugins.configs.cmp"
+--       end,
+--    }
+-- 
+--    use {
+--       "L3MON4D3/LuaSnip",
+--       wants = "friendly-snippets",
+--       after = "nvim-cmp",
+--       config = function()
+--          require("plugins.configs.others").luasnip()
+--       end,
+--    }
+-- 
+--    use {
+--       "saadparwaiz1/cmp_luasnip",
+--       after = "LuaSnip",
+--    }
+-- 
+--    use {
+--       "hrsh7th/cmp-nvim-lua",
+--       after = "cmp_luasnip",
+--    }
+-- 
+--    use {
+--       "hrsh7th/cmp-nvim-lsp",
+--       after = "cmp-nvim-lua",
+--    }
+-- 
+--    use {
+--       "hrsh7th/cmp-buffer",
+--       after = "cmp-nvim-lsp",
+--    }
+-- 
+--    -- misc plugins
+--    use {
+--       "windwp/nvim-autopairs",
+--       after = "nvim-cmp",
+--       config = function()
+--          require("plugins.configs.others").autopairs()
+--       end,
+--    }
 
    use {
       "glepnir/dashboard-nvim",

@@ -113,7 +113,7 @@ M.mappings = {
 
    line_number_toggle = "<leader>n", -- show or hide line number
    new_buffer = "<S-t>", -- open a new buffer
-   new_tab = "<C-t>b", -- open a new vim tab
+   new_tab = "<C-t>", -- open a new vim tab
    save_file = "<C-s>", -- save file using :w
    theme_toggler = "<leader>tt", -- for theme toggler, see in ui.theme_toggler
 
@@ -174,10 +174,11 @@ M.mappings.plugin = {
       format = "<leader>fm",
    },
    telescope = {
-      buffers = "<leader>fb",
-      find_files = "<leader>ff",
-      git_commits = "<leader>cm",
-      git_status = "<leader>gt",
+      buffers = "<leader><Tab>",
+      find_files = "<C-p>",
+      git_branches = "gb",
+      git_commits = "gc",
+      git_status = "gs",
       help_tags = "<leader>fh",
       live_grep = "<leader>fw",
       oldfiles = "<leader>fo",
@@ -198,12 +199,12 @@ M.mappings.plugin = {
       git_blame = "<leader>gb",
    },
    coc = {
-     jumpReferences = "<leader>gr",
-     jumpImplementation = "<leader>gi",
-     jumpTypeDefinition = "<leader>gt",
-     jumpDefinition = "<leader>gd",
-     jumpDeclaration = "<leader>gD",
-   }
+     jumpReferences = "gr",
+     jumpImplementation = "gi",
+     jumpTypeDefinition = "gt",
+     jumpDefinition = "gd",
+     jumpDeclaration = "gD",
+   },
 }
 
 -- user custom mappings

@@ -28,7 +28,6 @@ SPACESHIP_PROMPT_ORDER=(
     hg
     exec_time
     line_sep
-    vi_mode
     jobs
     exit_code
     char

@@ -14,6 +14,7 @@ plugins=(
     web-search
     universalarchive
     nmap
+    vi-mode
 )
 SPACESHIP_USER_SHOW="always"
 SPACESHIP_PROMPT_ADD_NEWLINE=false
@@ -48,14 +49,9 @@ my_monitor(){
 	xrandr --output eDP1 --auto --right-of HDMI1
 	xrandr --output HDMI1 --mode 1920x1080
 	xrandr --output eDP1 --off
-	feh --bg-fill -s ~/.background/octopus.jpg
+  feh --bg-fill -s ~/.background/octopus.jpg
 }
 
-tmp(){
-	TMP_DIR_NAME=$(head -1 /dev/urandom | base64 | head -1 | sed 's/\///g');
-	mkdir -p /tmp/$TMP_DIR_NAME;
-	cd /tmp/$TMP_DIR_NAME;
-}
 export PATH=/home/vtrgzll/bin:/usr/local/bin:/home/vtrgzll/.nvm/versions/node/v14.15.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin/:/snap/bin/
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:/usr/local/bin

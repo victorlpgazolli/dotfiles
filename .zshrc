@@ -1,7 +1,7 @@
 
 export ANDROID_HOME="/usr/lib/android-sdk"
 export ANDROID_SDK_ROOT=$ANDROID_HOME
-export ZSH="/home/vtrgzll/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
@@ -51,8 +51,8 @@ my_monitor(){
   feh --bg-fill -s ~/.background/octopus.jpg
 }
 
-export PATH=/home/vtrgzll/bin:/usr/local/bin:/home/vtrgzll/.nvm/versions/node/v14.15.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin/:/snap/bin/
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.nvm/versions/node/v14.15.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin/:/snap/bin/
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/home/vtrgzll/.emacs.d/bin
-source /home/vtrgzll/.cargo/env
+export PATH=$PATH:$HOME/.emacs.d/bin
+source $HOME/.cargo/env
